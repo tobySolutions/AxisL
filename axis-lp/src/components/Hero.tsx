@@ -188,7 +188,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="font-serif font-bold text-7xl sm:text-7xl md:text-8xl lg:text-9xl leading-[1] tracking-tighter text-white mb-6 drop-shadow-2xl"
+          className="font-serif font-normal text-5xl sm:text-7xl md:text-8xl lg:text-[11rem] leading-[0.9] tracking-[-0.04em] text-white mb-8 drop-shadow-2xl"
         >
           Your idea.
           <br />
@@ -201,7 +201,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.55, duration: 0.8 }}
-          className="text-lg sm:text-xl md:text-2xl font-light text-white/70 tracking-wide mb-14 max-w-2xl"
+          className="text-lg sm:text-xl md:text-2xl font-normal text-white/50 tracking-wide mb-16 max-w-2xl"
         >
           The first onchain index funds. Build, manage, and scale your index
           fund in seconds.

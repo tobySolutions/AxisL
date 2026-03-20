@@ -33,7 +33,7 @@ const AuctionCycleAnimation = () => {
             exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
             className="flex flex-col items-center w-full max-w-lg z-10"
           >
-            <h3 className="text-gold-gradient text-xs font-bold tracking-widest uppercase mb-8 flex items-center gap-2">
+            <h3 className="text-gold-gradient text-xs font-normal tracking-widest uppercase mb-8 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#D97706] animate-pulse shadow-[0_0_10px_#D97706]" />{" "}
               Phase 1: Auction
             </h3>
@@ -114,7 +114,7 @@ const AuctionCycleAnimation = () => {
             exit={{ opacity: 0 }}
             className="flex flex-col items-center w-full z-10"
           >
-            <h3 className="text-emerald-400 text-sm font-bold tracking-widest uppercase mb-8 flex items-center gap-2">
+            <h3 className="text-emerald-400 text-sm font-normal tracking-widest uppercase mb-8 flex items-center gap-2">
               <Zap size={14} className="fill-emerald-400" /> Phase 2: Value
               Capture
             </h3>
@@ -171,7 +171,7 @@ export default function Mechanism() {
     <section id="mechanism" className="relative py-20 sm:py-32 px-4 sm:px-6 bg-black">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-center lg:text-left space-y-6">
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight text-white">
+          <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-normal leading-tight text-white">
             Don&apos;t pay for <br />
             <span className="text-white/40">rebalancing.</span> <br />
             <span className="text-gold-gradient italic">Get paid for it.</span>

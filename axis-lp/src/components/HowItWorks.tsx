@@ -87,10 +87,10 @@ export default function HowItWorks() {
             className="flex flex-col items-center text-center gap-8"
           >
             <div className="space-y-4">
-              <span className="text-[#D97706] text-lg font-bold font-mono">
+              <span className="text-[#D97706] text-lg font-normal font-mono">
                 /{step.number}
               </span>
-              <h3 className="text-4xl font-serif font-bold text-white">
+              <h3 className="text-5xl font-serif font-normal text-white">
                 {step.title}
               </h3>
               <p className="text-white/60 text-sm leading-relaxed max-w-xs mx-auto">
@@ -126,10 +126,10 @@ export default function HowItWorks() {
                   exit={{ opacity: 0, x: 20 }}
                   className="absolute inset-0 flex flex-col justify-center"
                 >
-                  <div className="w-16 h-16 rounded-full border border-[#D97706]/30 text-[#D97706] text-2xl font-bold flex items-center justify-center mb-8">
+                  <div className="w-16 h-16 rounded-full border border-[#D97706]/30 text-[#D97706] text-2xl font-normal flex items-center justify-center mb-8">
                     {steps[activeStep].number}
                   </div>
-                  <h3 className="text-7xl font-serif font-bold mb-6 text-white">
+                  <h3 className="text-8xl font-serif font-normal mb-6 text-white">
                     {steps[activeStep].title}
                   </h3>
                   <p className="text-xl text-white/60 max-w-md">

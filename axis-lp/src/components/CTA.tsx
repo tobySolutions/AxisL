@@ -18,7 +18,7 @@ export default function CTA() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 max-w-3xl mx-auto text-center"
       >
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white mb-6 leading-tight">
           Ready to build the{" "}
           <span className="text-gold-gradient italic">future of indexing</span>?
         </h2>

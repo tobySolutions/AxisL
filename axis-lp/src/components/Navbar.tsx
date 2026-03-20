@@ -14,16 +14,29 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollTo = (id: string) => {
+    // If we're not on the home page, navigate there first
+    if (window.location.pathname !== '/') {
+      window.location.href = '/#' + id;
+      return;
+    }
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
+  };
+
+  const goHome = () => {
+    if (window.location.pathname !== '/') {
+      window.location.href = '/';
+    } else {
+      scrollTo('hero');
+    }
   };
 
   return (
     <nav className="fixed top-0 w-full z-50 px-6 py-4 backdrop-blur-md bg-black/10 border-b border-white/5">
       <div className="max-w-[1440px] mx-auto flex justify-between items-center">
         <button
-          onClick={() => scrollTo("hero")}
+          onClick={goHome}
           className="hover:opacity-80 transition-opacity"
         >
           <img src="/logo.png" alt="Axis" className="h-12 w-auto" />
@@ -78,8 +91,8 @@ export default function Navbar() {
               {navLinks.map((item) => (
                 <button
                   key={item.name}
-                  className="text-left text-xl font-serif text-white/70 py-3 border-b border-white/5"
-                  onClick={() => scrollTo(item.id)}
+                  className="text-left text-xl text-white/70 py-3 border-b border-white/5"
+                  onClick={() => { scrollTo(item.id); setIsOpen(false); }}
                 >
                   {item.name}
                 </button>
